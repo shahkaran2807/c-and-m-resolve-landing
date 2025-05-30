@@ -14,9 +14,9 @@ export const Hero = () => {
     <section className="relative bg-gradient-to-br from-blue-50 to-white py-20 overflow-hidden">
       {/* Background image with gradient overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(239, 246, 255, 0.9) 0%, rgba(239, 246, 255, 0.3) 70%, rgba(255, 255, 255, 0.1) 100%), url('/lovable-uploads/bae3d8d6-a0ab-4ae3-9967-a5fa8109ec9d.png')`
+          backgroundImage: `linear-gradient(to right, rgba(239, 246, 255, 0.9) 0%, rgba(239, 246, 255, 0.5) 50%, rgba(255, 255, 255, 0.2) 100%), url('/lovable-uploads/bae3d8d6-a0ab-4ae3-9967-a5fa8109ec9d.png')`
         }}
       />
       
