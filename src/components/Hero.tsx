@@ -40,7 +40,7 @@ export const Hero = () => {
             <img 
               src="/lovable-uploads/4354e2de-416e-402c-bcb9-f6d356402f53.png" 
               alt="Office workspace with clock, plant, and desk lamp"
-              className="max-w-full h-auto rounded-lg"
+              className="w-full max-w-2xl h-auto rounded-lg opacity-60"
             />
           </div>
         </div>
