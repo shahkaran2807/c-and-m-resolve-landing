@@ -28,7 +28,7 @@ export const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Professional Debt <span className="text-blue-900">Recovery Solutions</span>
+              Turning Debt into <span className="text-blue-900">Opportunity</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Partner with us for effective debt recovery services that maximize collections 
