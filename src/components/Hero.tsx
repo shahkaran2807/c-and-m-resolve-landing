@@ -16,7 +16,7 @@ export const Hero = () => {
       <div 
         className="absolute right-0 top-0 w-3/5 h-full bg-contain bg-right bg-no-repeat opacity-60"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(239, 246, 255, 0.9) 0%, rgba(239, 246, 255, 0.6) 30%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0.8) 95%, rgba(255, 255, 255, 1) 100%), url('/lovable-uploads/bae3d8d6-a0ab-4ae3-9967-a5fa8109ec9d.png')`
+          backgroundImage: `linear-gradient(to right, rgba(239, 246, 255, 1) 0%, rgba(239, 246, 255, 0.8) 15%, rgba(239, 246, 255, 0.6) 30%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0.8) 95%, rgba(255, 255, 255, 1) 100%), url('/lovable-uploads/bae3d8d6-a0ab-4ae3-9967-a5fa8109ec9d.png')`
         }}
       />
       
