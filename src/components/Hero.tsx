@@ -11,18 +11,17 @@ export const Hero = () => {
   };
 
   return (
-    <section 
-      className="relative bg-gradient-to-br from-blue-50 to-white py-20 overflow-hidden"
-      style={{
-        backgroundImage: `url('/lovable-uploads/4354e2de-416e-402c-bcb9-f6d356402f53.png')`,
-        backgroundPosition: 'right center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'contain',
-        backgroundOpacity: '0.3'
-      }}
-    >
-      {/* Semi-transparent overlay for the background image */}
-      <div className="absolute inset-0 bg-white/40"></div>
+    <section className="relative bg-gradient-to-br from-blue-50 to-white py-20 overflow-hidden">
+      {/* Background image with opacity */}
+      <div 
+        className="absolute inset-0 opacity-30"
+        style={{
+          backgroundImage: `url('/lovable-uploads/4354e2de-416e-402c-bcb9-f6d356402f53.png')`,
+          backgroundPosition: 'right center',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'contain'
+        }}
+      ></div>
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
