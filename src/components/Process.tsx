@@ -5,28 +5,28 @@ export const Process = () => {
   const steps = [
     {
       number: "01",
-      title: "Initial Contact",
-      description: "We reach out to discuss your debt situation and explain your options in a respectful, professional manner."
+      title: "Account Transfer",
+      description: "Secure transfer of charged-off accounts with complete documentation and customer history."
     },
     {
       number: "02",
-      title: "Assessment",
-      description: "We review your financial situation to understand what payment arrangements might work for you."
+      title: "Portfolio Analysis",
+      description: "Comprehensive review of account portfolio to develop optimal recovery strategies for each segment."
     },
     {
       number: "03",
-      title: "Solution Planning",
-      description: "Together, we develop a feasible payment plan that fits your budget and helps resolve your debt."
+      title: "Strategic Outreach",
+      description: "Professional, compliant contact with debtors using proven communication strategies that protect your brand."
     },
     {
       number: "04",
-      title: "Implementation",
-      description: "We implement the agreed-upon solution and provide ongoing support throughout the process."
+      title: "Payment Facilitation",
+      description: "Flexible payment solutions and arrangements that maximize recovery while accommodating debtor circumstances."
     },
     {
       number: "05",
-      title: "Resolution",
-      description: "Complete your payment plan and work towards improving your credit history and financial standing."
+      title: "Reporting & Remittance",
+      description: "Detailed reporting on collection activities and prompt remittance of recovered funds to your institution."
     }
   ];
 
@@ -35,11 +35,11 @@ export const Process = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Our Process
+            Our Partnership Process
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We follow a structured, consumer-friendly approach to debt resolution that 
-            prioritizes your financial well-being and future success.
+            A structured, transparent approach to debt recovery that maximizes results 
+            while protecting your institution's reputation and maintaining full compliance.
           </p>
         </div>
 
@@ -67,17 +67,17 @@ export const Process = () => {
 
         <div className="mt-16 bg-gray-50 rounded-lg p-8">
           <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-center">
-            Ready to Start the Process?
+            Ready to Partner with Us?
           </h3>
           <p className="text-gray-600 text-center mb-6 max-w-2xl mx-auto">
-            Contact us today to begin working towards a debt resolution solution that works for your situation.
+            Contact us today to discuss how we can help improve your institution's debt recovery performance.
           </p>
           <div className="text-center">
             <button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
             >
-              Contact Us Now
+              Contact Our Team
             </button>
           </div>
         </div>

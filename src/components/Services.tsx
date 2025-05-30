@@ -7,23 +7,23 @@ export const Services = () => {
   const services = [
     {
       icon: CreditCard,
-      title: "Consumer Collection",
-      description: "Professional debt collection services focused on finding feasible solutions for consumers."
+      title: "Third-Party Collections",
+      description: "Professional debt recovery services for accounts that have exhausted internal collection efforts."
     },
     {
       icon: FileText,
-      title: "Payment Plans",
-      description: "Flexible payment arrangements tailored to your financial situation and capabilities."
+      title: "Flexible Payment Solutions",
+      description: "Customized payment arrangements that maximize recovery while working within debtors' capabilities."
     },
     {
       icon: Phone,
-      title: "Consultation Services",
-      description: "Free consultations to discuss your debt situation and explore available options."
+      title: "Compliance Management",
+      description: "Fully compliant collection practices that protect your institution from regulatory risks."
     },
     {
       icon: CheckCircle,
-      title: "Credit Improvement",
-      description: "Work towards resolving debt to help improve your credit history and financial standing."
+      title: "Recovery Optimization",
+      description: "Strategic approaches designed to maximize collection rates and minimize write-offs."
     }
   ];
 
@@ -35,8 +35,8 @@ export const Services = () => {
             Our Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We offer comprehensive debt resolution services designed to help you regain 
-            financial stability while working within your means.
+            Comprehensive debt recovery solutions designed to maximize collections for financial 
+            institutions while maintaining compliance and protecting customer relationships.
           </p>
         </div>
 
@@ -55,16 +55,16 @@ export const Services = () => {
         </div>
 
         <div className="mt-16 bg-blue-900 rounded-lg p-8 text-center text-white">
-          <h3 className="text-2xl font-semibold mb-4">Need Help Understanding Your Options?</h3>
+          <h3 className="text-2xl font-semibold mb-4">Ready to Improve Your Recovery Rates?</h3>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-            Our experienced team is here to explain your situation and work with you to find a solution 
-            that fits your financial circumstances.
+            Partner with our experienced team to turn your charged-off accounts into recovered revenue 
+            while maintaining your institution's reputation and compliance standards.
           </p>
           <button 
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
-            Get Free Consultation
+            Start Partnership Discussion
           </button>
         </div>
       </div>

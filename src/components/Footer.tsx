@@ -10,7 +10,7 @@ export const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">C & M Associates Group, Inc.</h3>
             <p className="text-gray-300 mb-4">
-              Professional debt collection and recovery services focused on consumer-friendly solutions.
+              Professional debt collection and recovery services for financial institutions and creditors.
             </p>
             <div className="flex items-center space-x-4">
               <Phone className="h-5 w-5 text-gray-400" />
@@ -23,7 +23,7 @@ export const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-300">
               <li>
                 <button 
@@ -38,7 +38,7 @@ export const Footer = () => {
                   onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
                   className="hover:text-white transition-colors"
                 >
-                  Services
+                  Our Services
                 </button>
               </li>
               <li>
@@ -46,7 +46,7 @@ export const Footer = () => {
                   onClick={() => document.getElementById('process')?.scrollIntoView({ behavior: 'smooth' })}
                   className="hover:text-white transition-colors"
                 >
-                  Process
+                  Partnership Process
                 </button>
               </li>
               <li>
@@ -54,18 +54,17 @@ export const Footer = () => {
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                   className="hover:text-white transition-colors"
                 >
-                  Contact
+                  Contact Us
                 </button>
               </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Important Information</h4>
+            <h4 className="text-lg font-semibold mb-4">Partnership Information</h4>
             <p className="text-gray-300 text-sm leading-relaxed">
-              This is an attempt to collect a debt. Any information obtained will be used for that purpose. 
-              We are committed to treating all consumers with respect and dignity while working towards 
-              feasible debt resolution solutions.
+              We specialize in third-party debt collection for financial institutions, providing 
+              compliant and effective recovery solutions that protect your brand while maximizing collections.
             </p>
           </div>
         </div>

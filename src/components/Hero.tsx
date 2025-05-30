@@ -17,11 +17,11 @@ export const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Debt Resolution <span className="text-blue-900">Made Simple</span>
+              Professional Debt <span className="text-blue-900">Recovery Solutions</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              We specialize in consumer collection and recovery, working with you to find 
-              feasible solutions that improve your credit history and financial future.
+              Partner with us for effective debt recovery services that maximize collections 
+              while maintaining positive relationships with your customers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
@@ -30,7 +30,7 @@ export const Hero = () => {
                 className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-3"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Speak with a Specialist
+                Partner with Us
               </Button>
               <Button 
                 onClick={scrollToContact}
@@ -39,29 +39,29 @@ export const Hero = () => {
                 className="border-blue-900 text-blue-900 hover:bg-blue-50 px-8 py-3"
               >
                 <Mail className="h-5 w-5 mr-2" />
-                Get Information
+                Learn More
               </Button>
             </div>
           </div>
           <div className="hidden lg:block">
             <div className="bg-white rounded-lg shadow-xl p-8">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Why Choose Us?</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Why Financial Institutions Choose Us</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-blue-900 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-600">Consumer-focused approach</span>
+                  <span className="text-gray-600">Higher recovery rates</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-blue-900 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-600">Feasible payment solutions</span>
+                  <span className="text-gray-600">Compliant collection practices</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-blue-900 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-600">Credit history improvement</span>
+                  <span className="text-gray-600">Preserve customer relationships</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-blue-900 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-600">Professional, respectful service</span>
+                  <span className="text-gray-600">Detailed reporting and transparency</span>
                 </li>
               </ul>
             </div>

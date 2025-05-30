@@ -13,28 +13,30 @@ export const About = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We are a collection agency that specializes in consumer collection and recovery, 
-            committed to helping consumers resolve their debt while improving their credit history.
+            partnering with financial institutions to maximize debt recovery while maintaining compliance.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Our Commitment</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Our Partnership Approach</h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Debt with our company has already gone through the original creditor's internal 
-              collection process. Our job is to work with consumers in a manner that is feasible 
-              to the consumer, the original creditor, and us.
+              When debt is transferred to our company, it has already gone through your internal 
+              collection process. Our expertise lies in working with consumers in a manner that is 
+              feasible for all parties - the consumer, your institution, and us.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              We understand that financial difficulties can happen to anyone, and we're here to 
-              help you find a path forward that works for your unique situation.
+              We understand that maintaining positive customer relationships is crucial for your 
+              business, which is why we focus on respectful, compliant collection practices that 
+              protect your brand reputation.
             </p>
           </div>
           <div className="bg-blue-50 rounded-lg p-8">
             <h4 className="text-xl font-semibold text-blue-900 mb-4">Our Mission</h4>
             <p className="text-blue-800">
-              To provide professional, respectful debt resolution services that help consumers 
-              regain financial stability while maintaining the trust of our creditor partners.
+              To provide professional debt recovery services that maximize collections for our 
+              financial institution partners while maintaining the highest standards of compliance 
+              and customer service.
             </p>
           </div>
         </div>
@@ -43,9 +45,9 @@ export const About = () => {
           <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
             <CardContent className="p-8 text-center">
               <Users className="h-12 w-12 text-blue-900 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Consumer-Focused</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Partnership-Focused</h3>
               <p className="text-gray-600">
-                We prioritize working with consumers to find solutions that fit their financial situation.
+                We work as an extension of your team, aligned with your institution's values and goals.
               </p>
             </CardContent>
           </Card>
@@ -55,7 +57,7 @@ export const About = () => {
               <Target className="h-12 w-12 text-blue-900 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Results-Driven</h3>
               <p className="text-gray-600">
-                Our goal is successful debt resolution that benefits all parties involved.
+                Our proven strategies maximize recovery rates while minimizing risk and maintaining compliance.
               </p>
             </CardContent>
           </Card>
@@ -63,9 +65,9 @@ export const About = () => {
           <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
             <CardContent className="p-8 text-center">
               <Heart className="h-12 w-12 text-blue-900 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Compassionate</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Reputation Protection</h3>
               <p className="text-gray-600">
-                We treat every consumer with respect and understanding throughout the process.
+                We safeguard your brand reputation through respectful and professional collection practices.
               </p>
             </CardContent>
           </Card>

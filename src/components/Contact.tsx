@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -11,6 +12,7 @@ export const Contact = () => {
     name: '',
     email: '',
     phone: '',
+    company: '',
     message: ''
   });
   const { toast } = useToast();
@@ -18,10 +20,10 @@ export const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Message Sent",
-      description: "We'll contact you within 24 hours to discuss your situation.",
+      title: "Partnership Inquiry Sent",
+      description: "We'll contact you within 24 hours to discuss your debt recovery needs.",
     });
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    setFormData({ name: '', email: '', phone: '', company: '', message: '' });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -36,11 +38,11 @@ export const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Contact Us
+            Partner with Us
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to discuss your debt situation? We're here to help you find a solution 
-            that works for your financial circumstances.
+            Ready to improve your debt recovery performance? Contact us to discuss how we can 
+            help maximize collections while protecting your institution's reputation.
           </p>
         </div>
 
@@ -48,13 +50,13 @@ export const Contact = () => {
           {/* Contact Form */}
           <Card className="shadow-lg border-none">
             <CardHeader>
-              <CardTitle className="text-2xl text-gray-900">Get in Touch</CardTitle>
+              <CardTitle className="text-2xl text-gray-900">Start a Partnership Discussion</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    Full Name *
+                    Contact Name *
                   </label>
                   <Input
                     id="name"
@@ -65,6 +67,22 @@ export const Contact = () => {
                     onChange={handleChange}
                     className="w-full"
                     placeholder="Enter your full name"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                    Institution/Company *
+                  </label>
+                  <Input
+                    id="company"
+                    name="company"
+                    type="text"
+                    required
+                    value={formData.company}
+                    onChange={handleChange}
+                    className="w-full"
+                    placeholder="Enter your institution name"
                   />
                 </div>
                 
@@ -80,7 +98,7 @@ export const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full"
-                    placeholder="Enter your email address"
+                    placeholder="Enter your business email"
                   />
                 </div>
                 
@@ -110,12 +128,12 @@ export const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     className="w-full"
-                    placeholder="Tell us about your situation or any questions you have"
+                    placeholder="Tell us about your debt recovery needs or any questions you have"
                   />
                 </div>
                 
                 <Button type="submit" className="w-full bg-blue-900 hover:bg-blue-800 text-white">
-                  Send Message
+                  Send Partnership Inquiry
                 </Button>
               </form>
             </CardContent>
@@ -179,9 +197,9 @@ export const Contact = () => {
             </Card>
 
             <div className="bg-blue-900 rounded-lg p-6 text-white">
-              <h4 className="text-lg font-semibold mb-3">Need Immediate Assistance?</h4>
+              <h4 className="text-lg font-semibold mb-3">Ready to Discuss Partnership?</h4>
               <p className="text-blue-100 mb-4">
-                Call us directly to speak with a debt resolution specialist who can help you understand your options.
+                Call us directly to speak with our team about how we can help improve your debt recovery performance.
               </p>
               <Button className="bg-white text-blue-900 hover:bg-gray-100">
                 <Phone className="h-4 w-4 mr-2" />
