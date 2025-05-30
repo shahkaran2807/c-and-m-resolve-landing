@@ -1,10 +1,9 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Phone, Mail, MapPin, Clock, CreditCard } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 export const Contact = () => {
@@ -32,10 +31,6 @@ export const Contact = () => {
     });
   };
 
-  const handlePayOnline = () => {
-    window.open('https://www.quantumpayments.com/?apikey=f6eCreTa', '_blank');
-  };
-
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,25 +42,6 @@ export const Contact = () => {
             Ready to discuss your debt situation? We're here to help you find a solution 
             that works for your financial circumstances.
           </p>
-        </div>
-
-        {/* Pay Online Section */}
-        <div className="mb-12 text-center">
-          <Card className="shadow-lg border-none bg-blue-900 text-white max-w-md mx-auto">
-            <CardContent className="p-6">
-              <CreditCard className="h-12 w-12 mx-auto mb-4 text-white" />
-              <h3 className="text-xl font-semibold mb-3">Pay Online</h3>
-              <p className="text-blue-100 mb-4">
-                Make a secure payment online using our payment portal.
-              </p>
-              <Button 
-                onClick={handlePayOnline}
-                className="bg-white text-blue-900 hover:bg-gray-100 w-full"
-              >
-                Pay Now
-              </Button>
-            </CardContent>
-          </Card>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

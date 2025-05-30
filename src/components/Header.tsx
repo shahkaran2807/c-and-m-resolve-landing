@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone, CreditCard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const Header = () => {
@@ -12,6 +12,10 @@ export const Header = () => {
       section.scrollIntoView({ behavior: 'smooth' });
       setIsMenuOpen(false);
     }
+  };
+
+  const handlePayOnline = () => {
+    window.open('https://www.quantumpayments.com/?apikey=f6eCreTa', '_blank');
   };
 
   return (
@@ -50,8 +54,15 @@ export const Header = () => {
             </button>
           </nav>
 
-          {/* Contact Button */}
+          {/* Contact & Pay Buttons */}
           <div className="hidden md:flex items-center space-x-4">
+            <Button 
+              onClick={handlePayOnline}
+              className="bg-green-600 hover:bg-green-700 text-white"
+            >
+              <CreditCard className="h-4 w-4 mr-2" />
+              Pay Online
+            </Button>
             <Button 
               onClick={() => scrollToSection('contact')}
               className="bg-blue-900 hover:bg-blue-800 text-white"
@@ -100,6 +111,22 @@ export const Header = () => {
               >
                 Contact
               </button>
+              <div className="pt-2 space-y-2">
+                <Button 
+                  onClick={handlePayOnline}
+                  className="bg-green-600 hover:bg-green-700 text-white w-full"
+                >
+                  <CreditCard className="h-4 w-4 mr-2" />
+                  Pay Online
+                </Button>
+                <Button 
+                  onClick={() => scrollToSection('contact')}
+                  className="bg-blue-900 hover:bg-blue-800 text-white w-full"
+                >
+                  <Phone className="h-4 w-4 mr-2" />
+                  Contact Us
+                </Button>
+              </div>
             </nav>
           </div>
         )}
