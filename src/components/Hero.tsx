@@ -11,7 +11,19 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 to-white py-20 overflow-hidden">
+    <section 
+      className="relative bg-gradient-to-br from-blue-50 to-white py-20 overflow-hidden"
+      style={{
+        backgroundImage: `url('/lovable-uploads/4354e2de-416e-402c-bcb9-f6d356402f53.png')`,
+        backgroundPosition: 'right center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'contain',
+        backgroundOpacity: '0.3'
+      }}
+    >
+      {/* Semi-transparent overlay for the background image */}
+      <div className="absolute inset-0 bg-white/40"></div>
+      
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -35,14 +47,8 @@ export const Hero = () => {
             </div>
           </div>
           
-          {/* Image section */}
-          <div className="flex justify-center lg:justify-end">
-            <img 
-              src="/lovable-uploads/4354e2de-416e-402c-bcb9-f6d356402f53.png" 
-              alt="Office workspace with clock, plant, and desk lamp"
-              className="w-full max-w-2xl h-auto rounded-lg opacity-60"
-            />
-          </div>
+          {/* Empty space for the background image */}
+          <div className="hidden lg:block"></div>
         </div>
       </div>
     </section>
