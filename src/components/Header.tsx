@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Menu, X, Phone, CreditCard } from 'lucide-react';
+import { Menu, X, CreditCard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const Header = () => {
@@ -48,21 +48,14 @@ export const Header = () => {
             </button>
           </nav>
 
-          {/* Contact & Pay Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Pay Online Button */}
+          <div className="hidden md:flex items-center">
             <Button 
               onClick={handlePayOnline}
               className="bg-green-600 hover:bg-green-700 text-white"
             >
               <CreditCard className="h-4 w-4 mr-2" />
               Pay Online
-            </Button>
-            <Button 
-              onClick={() => scrollToSection('contact')}
-              className="bg-blue-900 hover:bg-blue-800 text-white"
-            >
-              <Phone className="h-4 w-4 mr-2" />
-              Contact Us
             </Button>
           </div>
 
@@ -99,20 +92,13 @@ export const Header = () => {
               >
                 Contact
               </button>
-              <div className="pt-2 space-y-2">
+              <div className="pt-2">
                 <Button 
                   onClick={handlePayOnline}
                   className="bg-green-600 hover:bg-green-700 text-white w-full"
                 >
                   <CreditCard className="h-4 w-4 mr-2" />
                   Pay Online
-                </Button>
-                <Button 
-                  onClick={() => scrollToSection('contact')}
-                  className="bg-blue-900 hover:bg-blue-800 text-white w-full"
-                >
-                  <Phone className="h-4 w-4 mr-2" />
-                  Contact Us
                 </Button>
               </div>
             </nav>
