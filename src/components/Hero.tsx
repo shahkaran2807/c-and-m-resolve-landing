@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Phone, Mail } from 'lucide-react';
 
 export const Hero = () => {
   const scrollToContact = () => {
@@ -26,19 +25,10 @@ export const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 onClick={scrollToContact}
-                size="lg" 
-                className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-3"
-              >
-                <Phone className="h-5 w-5 mr-2" />
-                Partner with Us
-              </Button>
-              <Button 
-                onClick={scrollToContact}
                 variant="outline" 
                 size="lg" 
                 className="border-blue-900 text-blue-900 hover:bg-blue-50 px-8 py-3"
               >
-                <Mail className="h-5 w-5 mr-2" />
                 Learn More
               </Button>
             </div>
