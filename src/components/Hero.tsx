@@ -19,7 +19,7 @@ export const Hero = () => {
           backgroundImage: `url('/lovable-uploads/4354e2de-416e-402c-bcb9-f6d356402f53.png')`,
           backgroundPosition: 'right center',
           backgroundRepeat: 'no-repeat',
-          backgroundSize: 'contain'
+          backgroundSize: 'cover'
         }}
       ></div>
       
