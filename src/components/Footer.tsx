@@ -43,14 +43,6 @@ export const Footer = () => {
               </li>
               <li>
                 <button 
-                  onClick={() => document.getElementById('process')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-white transition-colors"
-                >
-                  Partnership Process
-                </button>
-              </li>
-              <li>
-                <button 
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                   className="hover:text-white transition-colors"
                 >
