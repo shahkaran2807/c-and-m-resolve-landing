@@ -12,11 +12,11 @@ export const Hero = () => {
 
   return (
     <section className="relative bg-gradient-to-br from-blue-50 to-white py-20 overflow-hidden">
-      {/* Background image with gradient overlay */}
+      {/* Background image positioned on the right side */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
+        className="absolute right-0 top-0 w-1/2 h-full bg-contain bg-right bg-no-repeat opacity-60"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(239, 246, 255, 0.9) 0%, rgba(239, 246, 255, 0.5) 50%, rgba(255, 255, 255, 0.2) 100%), url('/lovable-uploads/bae3d8d6-a0ab-4ae3-9967-a5fa8109ec9d.png')`
+          backgroundImage: `linear-gradient(to left, rgba(255, 255, 255, 0.3) 0%, rgba(239, 246, 255, 0.7) 70%, rgba(239, 246, 255, 0.9) 100%), url('/lovable-uploads/bae3d8d6-a0ab-4ae3-9967-a5fa8109ec9d.png')`
         }}
       />
       
