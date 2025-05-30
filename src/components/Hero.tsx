@@ -34,26 +34,12 @@ export const Hero = () => {
             </div>
           </div>
           <div className="hidden lg:block">
-            <div className="bg-white rounded-lg shadow-xl p-8">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Why Financial Institutions Choose Us</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-900 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-600">Higher recovery rates</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-900 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-600">Compliant collection practices</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-900 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-600">Preserve customer relationships</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-900 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-600">Detailed reporting and transparency</span>
-                </li>
-              </ul>
+            <div className="relative">
+              <img 
+                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=6000&q=80"
+                alt="Professional business technology and data management"
+                className="rounded-lg shadow-xl w-full h-auto object-cover"
+              />
             </div>
           </div>
         </div>
