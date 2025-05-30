@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { CheckCircle, Shield, Clock } from 'lucide-react';
 
 export const Hero = () => {
   const scrollToContact = () => {
@@ -12,14 +13,6 @@ export const Hero = () => {
 
   return (
     <section className="relative bg-gradient-to-br from-blue-50 to-white py-20 overflow-hidden">
-      {/* Background image positioned on the right side */}
-      <div 
-        className="absolute right-0 top-0 w-4/5 h-full bg-contain bg-right bg-no-repeat opacity-60"
-        style={{
-          backgroundImage: `linear-gradient(to right, rgba(239, 246, 255, 1) 0%, rgba(239, 246, 255, 1) 5%, rgba(239, 246, 255, 0.98) 10%, rgba(239, 246, 255, 0.96) 15%, rgba(239, 246, 255, 0.94) 20%, rgba(239, 246, 255, 0.91) 25%, rgba(239, 246, 255, 0.88) 30%, rgba(239, 246, 255, 0.84) 35%, rgba(239, 246, 255, 0.8) 40%, rgba(239, 246, 255, 0.75) 45%, rgba(239, 246, 255, 0.7) 50%, rgba(239, 246, 255, 0.64) 55%, rgba(239, 246, 255, 0.57) 60%, rgba(239, 246, 255, 0.5) 65%, rgba(239, 246, 255, 0.42) 70%, rgba(239, 246, 255, 0.34) 75%, rgba(239, 246, 255, 0.25) 80%, rgba(239, 246, 255, 0.15) 85%, rgba(239, 246, 255, 0.08) 90%, rgba(239, 246, 255, 0.03) 95%, rgba(255, 255, 255, 0) 100%), url('/lovable-uploads/bae3d8d6-a0ab-4ae3-9967-a5fa8109ec9d.png')`
-        }}
-      />
-      
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -42,8 +35,43 @@ export const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="hidden lg:block">
-            {/* This div is kept for layout purposes but content removed since background image is now used */}
+          
+          {/* New content section */}
+          <div className="space-y-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Us?</h2>
+            
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="text-green-600 w-6 h-6 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-900 mb-2">95% Success Rate</h3>
+                  <p className="text-gray-600">Our proven methods deliver exceptional recovery rates while preserving customer relationships.</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <Shield className="text-blue-600 w-6 h-6 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-900 mb-2">Fully Compliant</h3>
+                  <p className="text-gray-600">All our practices strictly adhere to industry regulations and ethical standards.</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <Clock className="text-purple-600 w-6 h-6 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-900 mb-2">Fast Results</h3>
+                  <p className="text-gray-600">See improvements in your cash flow within the first 30 days of partnership.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-gray-200">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-blue-900 mb-2">$50M+</div>
+                <div className="text-gray-600">Successfully recovered for our clients</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
