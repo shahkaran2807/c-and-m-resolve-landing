@@ -11,8 +11,17 @@ export const Hero = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-blue-50 to-white py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative bg-gradient-to-br from-blue-50 to-white py-20 overflow-hidden">
+      {/* Background image with gradient overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        style={{
+          backgroundImage: `linear-gradient(to right, rgba(239, 246, 255, 0.9) 0%, rgba(239, 246, 255, 0.3) 70%, rgba(255, 255, 255, 0.1) 100%), url('/lovable-uploads/bae3d8d6-a0ab-4ae3-9967-a5fa8109ec9d.png')`
+        }}
+      />
+      
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
@@ -34,13 +43,7 @@ export const Hero = () => {
             </div>
           </div>
           <div className="hidden lg:block">
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=6000&q=80"
-                alt="Professional business technology and data management"
-                className="rounded-lg shadow-xl w-full h-auto object-cover"
-              />
-            </div>
+            {/* This div is kept for layout purposes but content removed since background image is now used */}
           </div>
         </div>
       </div>
