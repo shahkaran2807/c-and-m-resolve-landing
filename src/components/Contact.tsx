@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, CreditCard } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 export const Contact = () => {
@@ -32,6 +32,10 @@ export const Contact = () => {
     });
   };
 
+  const handlePayOnline = () => {
+    window.open('https://www.quantumpayments.com/?apikey=f6eCreTa', '_blank');
+  };
+
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,6 +47,25 @@ export const Contact = () => {
             Ready to discuss your debt situation? We're here to help you find a solution 
             that works for your financial circumstances.
           </p>
+        </div>
+
+        {/* Pay Online Section */}
+        <div className="mb-12 text-center">
+          <Card className="shadow-lg border-none bg-blue-900 text-white max-w-md mx-auto">
+            <CardContent className="p-6">
+              <CreditCard className="h-12 w-12 mx-auto mb-4 text-white" />
+              <h3 className="text-xl font-semibold mb-3">Pay Online</h3>
+              <p className="text-blue-100 mb-4">
+                Make a secure payment online using our payment portal.
+              </p>
+              <Button 
+                onClick={handlePayOnline}
+                className="bg-white text-blue-900 hover:bg-gray-100 w-full"
+              >
+                Pay Now
+              </Button>
+            </CardContent>
+          </Card>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -128,27 +151,28 @@ export const Contact = () => {
               <CardContent className="p-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-6">Contact Information</h3>
                 <div className="space-y-4">
-                  <div className="flex items-center">
-                    <Phone className="h-6 w-6 text-blue-900 mr-4" />
+                  <div className="flex items-start">
+                    <Phone className="h-6 w-6 text-blue-900 mr-4 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900">Phone</p>
-                      <p className="text-gray-600">(555) 123-4567</p>
+                      <p className="text-gray-600">Toll-Free: (877) 337-1783</p>
+                      <p className="text-gray-600">Fax: (708) 469-1694</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-center">
-                    <Mail className="h-6 w-6 text-blue-900 mr-4" />
+                  <div className="flex items-start">
+                    <Mail className="h-6 w-6 text-blue-900 mr-4 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900">Email</p>
-                      <p className="text-gray-600">info@cmassociatesgroup.com</p>
+                      <p className="text-gray-600">adam.goldberg@cmassociatesinc.com</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-center">
-                    <MapPin className="h-6 w-6 text-blue-900 mr-4" />
+                  <div className="flex items-start">
+                    <MapPin className="h-6 w-6 text-blue-900 mr-4 mt-1" />
                     <div>
-                      <p className="font-medium text-gray-900">Address</p>
-                      <p className="text-gray-600">123 Business Avenue<br />Suite 100<br />City, State 12345</p>
+                      <p className="font-medium text-gray-900">Mailing Address</p>
+                      <p className="text-gray-600">PO Box 7070<br />Westchester, IL 60154</p>
                     </div>
                   </div>
                 </div>
@@ -185,7 +209,7 @@ export const Contact = () => {
               </p>
               <Button className="bg-white text-blue-900 hover:bg-gray-100">
                 <Phone className="h-4 w-4 mr-2" />
-                Call Now: (555) 123-4567
+                Call Now: (877) 337-1783
               </Button>
             </div>
           </div>

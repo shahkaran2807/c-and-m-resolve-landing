@@ -14,11 +14,11 @@ export const Footer = () => {
             </p>
             <div className="flex items-center space-x-4">
               <Phone className="h-5 w-5 text-gray-400" />
-              <span className="text-gray-300">(555) 123-4567</span>
+              <span className="text-gray-300">(877) 337-1783</span>
             </div>
             <div className="flex items-center space-x-4 mt-2">
               <Mail className="h-5 w-5 text-gray-400" />
-              <span className="text-gray-300">info@cmassociatesgroup.com</span>
+              <span className="text-gray-300">adam.goldberg@cmassociatesinc.com</span>
             </div>
           </div>
           
