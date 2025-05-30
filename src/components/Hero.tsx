@@ -12,9 +12,9 @@ export const Hero = () => {
 
   return (
     <section className="relative bg-gradient-to-br from-blue-50 to-white py-20 overflow-hidden">
-      {/* Background image with opacity */}
+      {/* Background image with opacity - hidden on mobile */}
       <div 
-        className="absolute inset-0 opacity-30"
+        className="absolute inset-0 opacity-30 hidden lg:block"
         style={{
           backgroundImage: `url('/lovable-uploads/4354e2de-416e-402c-bcb9-f6d356402f53.png')`,
           backgroundPosition: 'right center',
