@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { CreditCard, FileText, Building, Scale } from 'lucide-react';
@@ -36,8 +35,7 @@ export const Services = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Full-spectrum debt recovery solutions designed to maximize collections across all 
-            sectors - from consumer accounts to complex commercial recoveries, healthcare receivables, 
-            and specialized legal collections.
+            sectors.
           </p>
         </div>
 
