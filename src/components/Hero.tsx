@@ -31,19 +31,19 @@ export const Hero = () => {
           </div>
           
           {/* Buttons Section */}
-          <div className="flex flex-col items-center lg:items-start space-y-4">
+          <div className="flex flex-col items-end space-y-3">
             <Button 
               onClick={scrollToContact}
               variant="outline" 
-              size="lg" 
-              className="border-blue-900 text-blue-900 hover:bg-blue-50 px-8 py-3 w-full max-w-xs"
+              size="default" 
+              className="border-blue-900 text-blue-900 hover:bg-blue-50 px-6 py-2 w-48"
             >
               Learn More
             </Button>
             <Button 
               onClick={handlePayOnline}
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 w-full max-w-xs"
-              size="lg"
+              className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 w-48"
+              size="default"
             >
               <CreditCard className="h-4 w-4 mr-2" />
               Pay Online

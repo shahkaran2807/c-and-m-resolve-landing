@@ -21,8 +21,8 @@ export const Header = () => {
             <h1 className="text-2xl font-bold text-blue-900">CnM</h1>
           </div>
           
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          {/* Desktop Navigation - Centered */}
+          <nav className="hidden md:flex space-x-8 absolute left-1/2 transform -translate-x-1/2">
             <button 
               onClick={() => scrollToSection('about')}
               className="text-gray-600 hover:text-blue-900 transition-colors"
