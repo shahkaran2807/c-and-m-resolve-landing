@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
-import { Menu, X, CreditCard } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Menu, X } from 'lucide-react';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,10 +11,6 @@ export const Header = () => {
       section.scrollIntoView({ behavior: 'smooth' });
       setIsMenuOpen(false);
     }
-  };
-
-  const handlePayOnline = () => {
-    window.open('https://www.quantumpayments.com/?apikey=f6eCreTa', '_blank');
   };
 
   return (
@@ -47,17 +42,6 @@ export const Header = () => {
               Contact
             </button>
           </nav>
-
-          {/* Pay Online Button */}
-          <div className="hidden md:flex items-center">
-            <Button 
-              onClick={handlePayOnline}
-              className="bg-green-600 hover:bg-green-700 text-white"
-            >
-              <CreditCard className="h-4 w-4 mr-2" />
-              Pay Online
-            </Button>
-          </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
@@ -92,15 +76,6 @@ export const Header = () => {
               >
                 Contact
               </button>
-              <div className="pt-2">
-                <Button 
-                  onClick={handlePayOnline}
-                  className="bg-green-600 hover:bg-green-700 text-white w-full"
-                >
-                  <CreditCard className="h-4 w-4 mr-2" />
-                  Pay Online
-                </Button>
-              </div>
             </nav>
           </div>
         )}
