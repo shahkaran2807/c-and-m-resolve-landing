@@ -41,8 +41,8 @@ export const Contact = () => {
             Partner with Us
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to improve your debt recovery performance? Contact us to discuss how we can 
-            help maximize collections while protecting your institution's reputation.
+            Ready to improve your debt recovery performance across all sectors? Contact us to 
+            discuss how we can help maximize collections while protecting your organization's reputation.
           </p>
         </div>
 
@@ -72,7 +72,7 @@ export const Contact = () => {
                 
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-                    Institution/Company *
+                    Organization/Company *
                   </label>
                   <Input
                     id="company"
@@ -82,7 +82,7 @@ export const Contact = () => {
                     value={formData.company}
                     onChange={handleChange}
                     className="w-full"
-                    placeholder="Enter your institution name"
+                    placeholder="Enter your organization name"
                   />
                 </div>
                 
@@ -128,7 +128,7 @@ export const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     className="w-full"
-                    placeholder="Tell us about your debt recovery needs or any questions you have"
+                    placeholder="Tell us about your debt recovery needs, account types, or any questions you have"
                   />
                 </div>
                 

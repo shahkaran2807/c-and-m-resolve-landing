@@ -8,22 +8,22 @@ export const Services = () => {
     {
       icon: CreditCard,
       title: "First-Party Collections",
-      description: "Direct collection services for your institution's internal collection efforts and customer accounts."
+      description: "Direct collection services for your organization's internal collection efforts across all account types and industries."
     },
     {
       icon: FileText,
       title: "Third-Party Collections",
-      description: "Professional debt recovery services for accounts that have exhausted internal collection efforts."
+      description: "Professional debt recovery services for consumer and commercial accounts that require specialized collection expertise."
     },
     {
       icon: Building,
       title: "Commercial Collections",
-      description: "Specialized collection services for business-to-business debt recovery and commercial accounts."
+      description: "Specialized collection services for business-to-business debt recovery, trade accounts, and complex commercial recoveries."
     },
     {
       icon: Scale,
       title: "Collections for Attorneys",
-      description: "Dedicated collection services supporting law firms and legal professionals with debt recovery."
+      description: "Dedicated collection services supporting law firms with judgment collections, legal fee recovery, and court-ordered payments."
     }
   ];
 
@@ -32,11 +32,12 @@ export const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Our Services
+            Our Comprehensive Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive debt recovery solutions designed to maximize collections for financial 
-            institutions while maintaining compliance and protecting customer relationships.
+            Full-spectrum debt recovery solutions designed to maximize collections across all 
+            sectors - from consumer accounts to complex commercial recoveries, healthcare receivables, 
+            and specialized legal collections.
           </p>
         </div>
 
@@ -55,10 +56,11 @@ export const Services = () => {
         </div>
 
         <div className="mt-16 bg-blue-900 rounded-lg p-8 text-center text-white">
-          <h3 className="text-2xl font-semibold mb-4">Ready to Improve Your Recovery Rates?</h3>
+          <h3 className="text-2xl font-semibold mb-4">Ready to Maximize Your Recovery Rates?</h3>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-            Partner with our experienced team to turn your charged-off accounts into recovered revenue 
-            while maintaining your institution's reputation and compliance standards.
+            Partner with our experienced team to recover outstanding debt across all sectors. 
+            From consumer accounts to complex commercial collections, we deliver results while 
+            maintaining your organization's reputation and compliance standards.
           </p>
           <button 
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}

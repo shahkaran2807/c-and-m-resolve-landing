@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Phone, Mail } from 'lucide-react';
 
@@ -9,7 +10,8 @@ export const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">CnM</h3>
             <p className="text-gray-300 mb-4">
-              Professional debt collection and recovery services for financial institutions and creditors.
+              Comprehensive debt collection and recovery services across all sectors - consumer, 
+              commercial, healthcare, and specialized collections for diverse industries.
             </p>
             <div className="flex items-center space-x-4">
               <Phone className="h-5 w-5 text-gray-400" />
@@ -54,8 +56,9 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Partnership Information</h4>
             <p className="text-gray-300 text-sm leading-relaxed">
-              We specialize in third-party debt collection for financial institutions, providing 
-              compliant and effective recovery solutions that protect your brand while maximizing collections.
+              We specialize in comprehensive debt collection across all sectors - from consumer 
+              and commercial accounts to healthcare receivables and legal collections, providing 
+              compliant and effective recovery solutions.
             </p>
           </div>
         </div>

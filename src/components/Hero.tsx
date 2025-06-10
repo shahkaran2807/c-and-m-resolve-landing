@@ -22,11 +22,12 @@ export const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Turning Debt into <span className="text-blue-900">Opportunity</span>
+              Comprehensive Debt Recovery <span className="text-blue-900">Solutions</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Partner with us for effective debt recovery services that maximize collections 
-              while maintaining positive relationships with your customers.
+              Expert debt collection services for all types of accounts - consumer, commercial, 
+              and specialized collections. We maximize recovery rates while maintaining 
+              compliance and protecting your business relationships.
             </p>
           </div>
           
