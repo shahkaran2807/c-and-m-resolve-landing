@@ -1,29 +1,29 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CreditCard, FileText, Phone, CheckCircle } from 'lucide-react';
+import { CreditCard, FileText, Building, Scale } from 'lucide-react';
 
 export const Services = () => {
   const services = [
     {
       icon: CreditCard,
+      title: "First-Party Collections",
+      description: "Direct collection services for your institution's internal collection efforts and customer accounts."
+    },
+    {
+      icon: FileText,
       title: "Third-Party Collections",
       description: "Professional debt recovery services for accounts that have exhausted internal collection efforts."
     },
     {
-      icon: FileText,
-      title: "Flexible Payment Solutions",
-      description: "Customized payment arrangements that maximize recovery while working within debtors' capabilities."
+      icon: Building,
+      title: "Commercial Collections",
+      description: "Specialized collection services for business-to-business debt recovery and commercial accounts."
     },
     {
-      icon: Phone,
-      title: "Compliance Management",
-      description: "Fully compliant collection practices that protect your institution from regulatory risks."
-    },
-    {
-      icon: CheckCircle,
-      title: "Recovery Optimization",
-      description: "Strategic approaches designed to maximize collection rates and minimize write-offs."
+      icon: Scale,
+      title: "Collections for Attorneys",
+      description: "Dedicated collection services supporting law firms and legal professionals with debt recovery."
     }
   ];
 
