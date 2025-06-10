@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, Target, Heart } from 'lucide-react';
@@ -13,8 +12,7 @@ export const About = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We are a full-service collection agency specializing in comprehensive debt recovery 
-            across all sectors - consumer, commercial, and specialized accounts for various industries 
-            including financial institutions, healthcare providers, and legal professionals.
+            across all sectors - consumer, commercial, and specialized accounts for various industries.
           </p>
         </div>
 
@@ -24,8 +22,7 @@ export const About = () => {
             <p className="text-gray-600 mb-6 leading-relaxed">
               We handle all types of debt collection - from consumer accounts to complex commercial 
               recoveries. Our expertise spans multiple industries and account types, ensuring that 
-              whether you're a financial institution, healthcare provider, utility company, or legal 
-              professional, we have the specialized knowledge to maximize your recovery rates.
+              we have the specialized knowledge to maximize your recovery rates across all sectors.
             </p>
             <p className="text-gray-600 leading-relaxed">
               Our approach is built on understanding that different types of debt require different 
