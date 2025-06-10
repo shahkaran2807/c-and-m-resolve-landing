@@ -23,7 +23,7 @@ export const Services = () => {
     {
       icon: Scale,
       title: "Collections for Attorneys",
-      description: "Dedicated collection services supporting law firms with judgment collections, legal fee recovery, and court-ordered payments."
+      description: "Dedicated collection services supporting law firms to collect the charged off debts for litigation."
     }
   ];
 
